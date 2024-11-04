@@ -9,7 +9,7 @@ const Board = ({onSeq}) => {
     const [url, setUrl] = useState('/board');
 
     useEffect(() => {
-        axios.get('http://localhost:8080/SpringReactProject/board/list')
+        axios.get('http://101.79.9.149:8090/SpringReactProject/board/list')
         .then(res => setList(res.data))
 
         console.log(list)

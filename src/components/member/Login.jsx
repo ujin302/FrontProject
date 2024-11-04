@@ -44,7 +44,7 @@ const Login = ({setName}) => {
 
         // Client - Server
         if(isOk) {
-            axios.get(`http://localhost:8080/SpringReactProject/member/login/submit?id=${id}&pwd=${pwd}`)
+            axios.get(`http://101.79.9.149:8090/SpringReactProject/member/login/submit?id=${id}&pwd=${pwd}`)
             .then(res => {
                 Session.set("name", res.data) 
 

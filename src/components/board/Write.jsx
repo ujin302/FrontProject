@@ -29,7 +29,7 @@ const Write = () => {
 
         if(!isOk) setDiv('필수 입력 사항을 확인하세요.');
         else { // Server -> Client
-            axios.post('http://localhost:8080/SpringReactProject/board/submit', 
+            axios.post('http://101.79.9.149:8090/SpringReactProject/board/submit', 
                 null, // 
                 {
                     params : {
@@ -46,7 +46,7 @@ const Write = () => {
     }
 
     return (
-        <form action='http://localhost:8080/SpringReactProject/board/submit' method='post'>
+        <form action='http://101.79.9.149:8090/SpringReactProject/board/submit' method='post'>
             <table className={style.table} id={style.wrtie}>
                 <thead>
                     <tr>

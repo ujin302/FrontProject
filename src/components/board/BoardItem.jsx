@@ -7,7 +7,7 @@ const BoardItem = ({seq}) => {
     const [dto, setDto] = useState({});
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/SpringReactProject/board/item?seq=${seq}`)
+        axios.get(`http://101.79.9.149:8090/SpringReactProject/board/item?seq=${seq}`)
         .then(res => {
             console.log(res.data)
             setDto(res.data)
